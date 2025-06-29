@@ -1,10 +1,13 @@
+
 # Sistema de Recomendación de Propiedades
 
 SRP es un sistema en el cual podrás visualizar propiedades disponibles a la venta. Selecciona una propiedad y el sistema te recomendará propiedades en la misma ciudad, en el mismo rango de precio o el mismo tipo de propiedad.
 
+
 ## 📸 Screenshots
 
-![App Screenshot]()
+![App Screenshot](https://raw.githubusercontent.com/thecoderbutcher/srp/refs/heads/main/snapshot/screenshot.webp)
+
 
 ## ⭐ Features
 
@@ -13,6 +16,7 @@ SRP es un sistema en el cual podrás visualizar propiedades disponibles a la ven
 - Agregar a Favorito
 - Búsqueda por título de propiedad
 - Paginación de a 9 propiedades por página
+
 
 ## 🖥️ Run Locally
 
@@ -40,10 +44,12 @@ Start the server
   npm run dev
 ```
 
+
 ## 🗂️ Architecture
 
-#### General
 
+
+#### General
 ```javascript
 srp/
 ├── app/
@@ -64,11 +70,12 @@ srp/
 - TailwindCSS
 - Node
 - NextJs
-
 ## 📜 License
 
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
+
 ## 🧑🏾‍💻 Author
 
 - [@thecoderbutcher](https://thecoderbutcher.site)
+
