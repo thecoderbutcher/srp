@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistema de Recomendación de Propiedades
 
-## Getting Started
+SRP es un sistema en el cual podrás visualizar propiedades disponibles a la venta. Selecciona una propiedad y el sistema te recomendará propiedades en la misma ciudad, en el mismo rango de precio o el mismo tipo de propiedad.
 
-First, run the development server:
+## 📸 Screenshots
+
+![App Screenshot]()
+
+## ⭐ Features
+
+- Visualización de propiedades
+- Detalles de propiedades
+- Agregar a Favorito
+- Búsqueda por título de propiedad
+- Paginación de a 9 propiedades por página
+
+## 🖥️ Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/thecoderbutcher/srp.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd srp
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🗂️ Architecture
 
-## Deploy on Vercel
+#### General
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```javascript
+srp/
+├── app/
+│   ├── components/
+│   ├── favorite/
+│   ├── properties/
+│   ├── global.css
+│   ├── layput.tsx
+│   └── page.tsx
+├── db/
+└── zustand/
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Tech Stack
+
+- Typescript
+- React
+- TailwindCSS
+- Node
+- NextJs
+
+## 📜 License
+
+[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
+
+## 🧑🏾‍💻 Author
+
+- [@thecoderbutcher](https://thecoderbutcher.site)
