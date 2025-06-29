@@ -25,7 +25,7 @@ const RecommendedProperties = ({ property }: { property: Property }) => {
     .slice(0, 3)
   return (
     <div className="flex flex-col py-4 gap-4">
-      <h2 className="text-xl bg-accent/20 mx-auto px-2 py-1 rounded-lg">Propiedes Recomendadas</h2>
+      <h2 className="text-xl bg-accent/20 mx-auto px-2 py-1 rounded-lg">Propiedades Recomendadas</h2>
       <PropertyList properties={recomendacionPorCiudad} title="En la misma ciudad" />
       <PropertyList properties={recomendacionPorTipo} title="Tipo de propiedad" />
       <PropertyList properties={recomendacionPorPrecio} title="Rango de precio" />

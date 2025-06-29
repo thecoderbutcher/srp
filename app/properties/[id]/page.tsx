@@ -16,6 +16,7 @@ const Page = async ({ params }: pageProps) => {
       <div className="flex items-center justify-center gap-4 py-10">
         <Image src={property.imagen} alt={property.titulo} width={350} height={200} />
         <div className="flex items-start gap-2">
+          {/**PROPERTY DETAILS */}
           <div className="flex flex-col gap-2">
             <h2 className="text-4xl font-black">{property.titulo}</h2>
             <div className="flex items-center gap-2">
@@ -36,9 +37,12 @@ const Page = async ({ params }: pageProps) => {
             </div>
             <p className="text-2xl">${property.precio}</p>
           </div>
+
+          {/**BUTTON TO ADD FAV*/}
           <FavoriteButton property={property}/>
         </div>
       </div>
+      {/**RECOMMENDED COMPONENT*/}
       <RecommendedProperties property={property} />
     </div>
   )

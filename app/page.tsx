@@ -12,7 +12,6 @@ export default function Home() {
   }, [setProperties])
 
   const propertiesFilter = propertiesFiltered()
-
   const casas = propertiesFilter.filter((casa) => casa.tipo === 'Casa').slice(0, 3)
   const departamentos = propertiesFilter
     .filter((departamento) => departamento.tipo === 'Departamento')

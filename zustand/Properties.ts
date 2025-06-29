@@ -5,6 +5,7 @@ type PropertyState = {
   properties: Property[]
   setProperties: (properties: Property[]) => void
 
+  /** Favorite stuff */
   favoriteProperties: Property[]
   setFavoriteProperties: (properties: Property[]) => void
   addFavorite: (property: Property) => void
@@ -47,7 +48,6 @@ export const usePropertyStore = create<PropertyState>((set, get) => ({
 
   propertiesFiltered() {
     const { properties, filterText } = get()
-
     const filtered = properties.filter(property => (property.titulo.toLowerCase().includes(filterText.toLowerCase())))
 
     return filtered
